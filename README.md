@@ -113,8 +113,8 @@ Python 3.11+ · Playwright · Requests · PyYAML · Discord webhooks
 ## Quick start
 
 ```bash
-git clone https://github.com/lesa3w/lego-scraper-bot.git
-cd lego-scraper-bot
+git clone https://github.com/lesa3w/Lego_Scraper_Bot.git
+cd Lego_Scraper_Bot
 
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
