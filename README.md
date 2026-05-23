@@ -1,4 +1,4 @@
-# Lego Scraper Bot
+# 🤖 Lego Scraper Bot
 
 > Discord bot that continuously scans **LeBonCoin** and **Vinted** for
 > underpriced Lego sets while filtering out scams. Posts real-time alerts
