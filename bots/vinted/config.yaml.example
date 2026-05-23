@@ -1,0 +1,49 @@
+global:
+  loop_delay: 87
+  jitter: 32
+  backoff_start: 30
+  backoff_max: 600
+
+filters:
+  priority:
+    - state          # Vinted condition (new_with_tags, etc.)
+    - lego_id        # A valid Lego set ID must appear in title/description
+    - seller         # Minimum seller rating + review count
+    - banned_words   # Reject listings containing banned keywords
+    - discount       # Discount vs reference price must fall in range
+
+  lego_id:
+    enabled: true
+
+  banned_words:
+    enabled: true
+
+  discount:
+    enabled: true
+    min: 30
+    max: 70
+
+  vinted:
+    state:
+      enabled: true
+    allowed_states:
+      - new_with_tags
+      - new_without_tags
+    seller:
+      enabled: true
+      min_rating: 3.0
+      min_reviews: 1
+
+vinted:
+  enabled: true
+  search_text: lego star wars
+  webhook: "REPLACE_WITH_YOUR_DISCORD_WEBHOOK_URL"
+  webhook_reject: "REPLACE_WITH_YOUR_DISCORD_REJECT_WEBHOOK_URL"
+
+  rejected_items:
+    log_console: true
+    send_discord: true
+
+  deep_scan_every: 3
+  deep_scan_jitter: 9
+  deep_pages: [2, 3]

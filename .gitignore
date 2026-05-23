@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets and runtime state — never commit these
+.env
+bots/*/config.yaml
+bots/*/seen.json
+bots/*/stats.json
+bots/*/vinted_token.json
+vinted_state.json
+*.log
+
+# IDE / editor
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# OS
+desktop.ini

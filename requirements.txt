@@ -1,0 +1,7 @@
+playwright>=1.40
+PyYAML>=6.0
+requests>=2.31
+
+# Windows-only: used by the LeBonCoin bot to auto-minimize the visible browser.
+# On macOS/Linux this dependency is skipped at runtime (try/except import).
+pyautogui>=0.9.54; sys_platform == "win32"
