@@ -1,12 +1,13 @@
 # Lego Scraper Bot
 
 > Discord bot that continuously scans **LeBonCoin** and **Vinted** for
-> underpriced Lego sets and posts real-time alerts with rich embeds:
-> matched set, reference price, discount %, condition, seller info.
+> underpriced Lego sets while filtering out scams. Posts real-time alerts
+> with rich embeds: matched set, reference price, discount %, condition,
+> seller info.
 
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![Playwright](https://img.shields.io/badge/playwright-1.40%2B-2EAD33)
-![License](https://img.shields.io/badge/license-MIT-green)
+![License](https://img.shields.io/badge/license-PolyForm--NC--1.0.0-orange)
 
 ## Demo
 
@@ -54,8 +55,9 @@ across **LeBonCoin** (Craigslist-style classifieds) and **Vinted**
 
 I built this bot to flip the asymmetry: scan both platforms 24/7, cross-check
 every listing against a reference DB of ~6,000 Lego sets and push only the
-real deals to a Discord channel. From a 100-second scan loop to a webhook
-embed in under 5 seconds.
+real deals to a Discord channel while ignoring the obvious scams (incomplete
+sets, custom builds, bricks sold in bulk, parts-only auctions). From a
+100-second scan loop to a webhook embed in under 5 seconds.
 
 The architectural challenge was that the two platforms behave nothing alike.
 LeBonCoin has no API and ships an aggressive Datadome challenge (slider
@@ -185,4 +187,7 @@ Things this project forced me to figure out:
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+[PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0/).
+Source-available, not open source. Personal, academic, research, hobby and
+non-profit use is permitted. Commercial use is not. See [LICENSE](LICENSE)
+for the full text.
